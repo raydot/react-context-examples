@@ -2,6 +2,8 @@ import React, { ReactDOM } from "react";
 import "./App.css";
 import { ThemeContext, themes } from "./theme-context";
 import ThemedButton from "./themed-button";
+import Page from "./Page";
+import Section from "./Section";
 
 // An intermediate component that uses the ThemedButton
 function Toolbar(props) {
@@ -41,6 +43,6 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.root);
+React.render(<App />, document.root);
 
 export default App;
